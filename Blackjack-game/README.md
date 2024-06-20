@@ -1,5 +1,6 @@
-### Welcome to the Blackjack Game Project!
-Are you ready to dive into the exciting world of Blackjack? This project will guide you through creating your own Blackjack game using Python. You'll be implementing the game's logic, dealing cards, calculating scores, and determining the winner.
+### Goal
+- Designs a Blackjack game using Python.
+- Implemented the game's logic, dealing cards, calculating scores, and determining the winner.
 
 ### Project Difficulty Levels:
 Normal 😎: Use all hints provided to complete the project.
