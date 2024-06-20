@@ -1,4 +1,4 @@
-### Goal
+### Goals:
 - Designs a Blackjack game using Python.
 - Implemented the game's logic, dealing cards, calculating scores, and determining the winner.
 
