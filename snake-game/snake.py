@@ -1,12 +1,3 @@
-
-from turtle import Turtle
-# Define constant
-STARTING_POSITION = [(0,0), (-20, 0), (-40,0)]  # different x-coordinates
-MOVE_DISTANCE = 20
-UP = 90
-DOWN = 270
-LEFT = 180
-RIGHT = 0
 class Snake:
     def __init__(self):
         self.segments = []  # movable action
@@ -17,11 +8,17 @@ class Snake:
     # Create a 3 segments snake using the starting position
     def create_snake(self):
         for i in STARTING_POSITION:
-            new_segment = Turtle("square")
-            new_segment.color("white")
-            new_segment.penup()     # Avoid drawing line
-            new_segment.goto(i)
-            self.segments.append(new_segment)
+            self.add_segment(i)
+    def add_segment(self, position):
+        new_segment = Turtle("circle")
+        new_segment.color("white")
+        new_segment.penup()  # Avoid drawing line
+        new_segment.goto(position)
+        self.segments.append(new_segment)
+
+    def extend(self):
+        # add new segment in tail, in the same position
+        self.add_segment(self.segments[-1].position())
 
     def move(self):
         # move in reverse order, where seg_num -1 is the 2nd to last segment
@@ -46,4 +43,3 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
-
