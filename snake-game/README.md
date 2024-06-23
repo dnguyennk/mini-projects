@@ -1,6 +1,7 @@
-### Ideas:
-- Create a simple snake game, applying OOP
-- Steps:
+### Ideas: 
+Create a simple snake game, applying OOP
+
+### Steps:
   1. Choose a background
   2. Create a snake body
   3. Adjust movements
